@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customers</h1>
+<%= link_to 'New Customer', new_customer_path %>
+
+  <% @customers.each do |customer| %>
+    <%= render customer %>
+  <% end %>
