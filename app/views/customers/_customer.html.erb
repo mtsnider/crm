@@ -3,9 +3,18 @@
  <h2>
     <%= link_to customer.fullname, customer %>
   </h2>
+
+   <% if customer.province_id?  %>
+    <p>Province:<%= customer.province_id %> </p>
+  <% else %>
+    <p>Province:None</p>
+
+  <% end %>
+
+
  <p><%= image_tag customer.image%></p>
- <p><%= customer.phone %></p>
- <p><%= customer.email %></p>
- <p><%= customer.note %> </p>
+ <p>Phone:<%= customer.phone %></p>
+ <p>Email: <%= customer.email %></p>
+ <p>Notes: <%= customer.note %> </p>
 
 </div>

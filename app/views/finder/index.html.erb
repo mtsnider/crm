@@ -2,7 +2,7 @@
 
 <h1>Customers</h1>
 <%= link_to 'New Customer', new_customer_path %>
-<%= link_to 'Missing Email', missing_email_path %>
+
   <% @customers.each do |customer| %>
     <%= render customer %>
   <% end %>
