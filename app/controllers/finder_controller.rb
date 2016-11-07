@@ -2,6 +2,7 @@ class FinderController < ApplicationController
 
   def index
     @customers = Customer.all
+    @provinces = Province.all
   end
 
   def sort

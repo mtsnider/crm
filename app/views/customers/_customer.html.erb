@@ -5,7 +5,7 @@
   </h2>
 
    <% if customer.province_id?  %>
-    <p>Province:<%= customer.province_id %> </p>
+    <p>Province:<%= customer.province.name %> </p>
   <% else %>
     <p>Province:None</p>
 
